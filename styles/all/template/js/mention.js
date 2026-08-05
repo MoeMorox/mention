@@ -12,6 +12,7 @@ $(document).ready(function () {
     tribute = new Tribute({
         collection: [{
             trigger: '@',
+			requireLeadingSpace: true, // Prevents triggering on email addresses, but allows the start of a sentence
             menuItemTemplate: function (item) {
                 if (item.original.type === 'group') {
                     return item.original.value +  SIMPLE_MENTION_GROUP_NAME.replace('{CNT}', item.original.cnt) ;
