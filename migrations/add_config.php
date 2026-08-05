@@ -20,7 +20,7 @@ class add_config extends \phpbb\db\migration\migration
 	public function update_data()
 	{
 		return [
-			['config.add', ['simple_mention_minlength', '1', false]],
+			['config.add', ['simple_mention_minlength', '2', false]],
 			['config.add', ['simple_mention_color', 'ff0000', false]],
 		];
 	}

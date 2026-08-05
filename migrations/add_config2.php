@@ -20,7 +20,7 @@ class add_config2 extends \phpbb\db\migration\migration
 	public function update_data()
 	{
 		return [
-			['config.add', ['simple_mention_maxresults', '50', false]],
+			['config.add', ['simple_mention_maxresults', '25', false]],
 			['config.add', ['simple_mention_large_groups', '50', false]],
 		];
 	}
