@@ -39,9 +39,8 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge(
 	$lang, array(
-		'ACL_U_CAN_MENTION'      => 'Darf das Erwähnungs-System nutzen',
-		'ACL_U_CAN_MENTION_GROUPS'	=> 'Can mention groups',
-		'ACL_U_CAN_MENTION_LARGE_GROUPS'	=> 'Can mention large groups (See configuration for large group settings)'
-
+		'ACL_U_CAN_MENTION'      => 'Kann Simple mentions (Erwähnungs-System) nutzen',
+		'ACL_U_CAN_MENTION_GROUPS'	=> 'Kann Gruppen bei Simple mentions erwähnen',
+		'ACL_U_CAN_MENTION_LARGE_GROUPS'	=> 'Kann große Gruppen bei Simple mentions erwähnen (s. Einstellung Gruppengröße)'
 	)
 );

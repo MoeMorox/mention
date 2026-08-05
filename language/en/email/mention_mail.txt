@@ -5,6 +5,7 @@ Hello,
 You were just mentioned by "{AUTHOR_NAME}" in "{TOPIC_TITLE}" at "{SITENAME}".
 
 To view the post you were mentioned in use this link:
+
 {U_LINK_TO_TOPIC}
 
 {EMAIL_SIG}

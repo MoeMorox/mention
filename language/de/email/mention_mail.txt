@@ -1,8 +1,8 @@
-Subject: Du wurdest erwähnt
+Subject: Erwähnung in einem Beitrag
 
 Hallo,
 
-Du wurdest von "{AUTHOR_NAME}" bei "{SITENAME}" erwähnt.
+Du wurdest von "{AUTHOR_NAME}" in "{TOPIC_TITLE}" bei "{SITENAME}" erwähnt.
 
 Um den Beitrag zu lesen, in dem du erwähnt wurdest, rufe den folgenden Link auf:
 
