@@ -19,14 +19,22 @@ if (empty($lang) || !is_array($lang))
 }
 
 $lang = array_merge($lang, array(
-	'MENTION_LENGTH'                => 'Simple mention minimum length',
-	'MENTION_LENGTH_EXPLAIN'        => 'The minimum text length before the simple mention dropdown is shown. 
-	On larger boards you might want to increase this value.',
-	'MENTION_COLOR'                 => 'Simple mention color',
-	'MENTION_COLOR_EXPLAIN'         => 'This color is used within the post to define what user is mentioned. Only hex values can be used.',
-	'MENTION_COLOR_INVALID'         => 'The selected mention color (%s) is invalid. Please select a valid HEX color, without #',
-	'MENTION_MAX_RESULTS'			=> 'Simple mention max results',
-	'MENTION_MAX_RESULTS_EXPLAIN'	=> 'The maximum number of users show in the dropdown. On larger boards you might want to decrease this value',
-	'MENTION_LARGE_GROUPS'			=> 'Mention large group size',
-	'MENTION_LARGE_GROUPS_EXPLAIN'	=> 'If the group has more members as the specified number, the “Can mention large groups” permission is required.'
+	'MENTION_LENGTH'                => 'Minimale Textlänge',
+	'MENTION_LENGTH_EXPLAIN'        => 'Die minimale Textlänge zum Anzeigen der Auswahlliste. Bei größeren Boards können Sie diesen Wert erhöhen.',
+	'MENTION_COLOR'                 => 'Farbe',
+	'MENTION_COLOR_EXPLAIN'         => 'Diese Farbe wird innerhalb des Beitrags für den Benutzer verwendet, der erwähnt wird. Es können nur Hex-Werte verwendet werden.',
+	'MENTION_COLOR_INVALID'         => 'Die gewählte Farbe (%s) ist ungültig. Bitte wähle eine gültige HEX-Farbe, ohne #.',
+	'MENTION_STYLE'					=> 'Schriftstil',
+	'MENTION_STYLE_EXPLAIN'			=> 'Der Schriftstil, der innerhalb des Beitrags für Erwähnungen verwendet wird.',
+	'MENTION_STYLE_INVALID'			=> 'Der gewählte Schriftstil (%s) ist ungültig.',
+	'MENTION_STYLE_NONE'			=> 'Keiner',
+	'MENTION_STYLE_ITALIC'			=> 'Kursiv',
+	'MENTION_STYLE_BOLD'			=> 'Fett',
+	'MENTION_STYLE_ITALIC_BOLD'		=> 'Fett und kursiv',
+	'MENTION_MAX_RESULTS'			=> 'Maximale Anzahl an Ergebnissen',
+	'MENTION_MAX_RESULTS_EXPLAIN'	=> 'Die maximale Anzahl von Benutzern zum Anzeigen der Auswahlliste. Bei größeren Boards können Sie diesen Wert verringern.',
+	'MENTION_LARGE_GROUPS'			=> 'Gruppengröße',
+	'MENTION_LARGE_GROUPS_EXPLAIN'	=> 'Wenn die Gruppe mehr Mitglieder als die angegebene Anzahl hat, ist die Berechtigung "Kann große Gruppen erwähnen" erforderlich.',
+	'MENTION_LINK'					=> 'Link zu Benutzerprofil',
+	'MENTION_LINK_EXPLAIN'			=> 'Wenn aktiviert, werden erwähnte Benutzer mit ihrem Profil verlinkt. Wenn deaktiviert, werden Erwähnungen nur als Text angezeigt.'
 ));
