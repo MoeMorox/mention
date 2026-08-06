@@ -51,7 +51,12 @@ class update_notifications extends \phpbb\db\migration\migration
 			foreach ($rowset as $row)
 			{
 				// get notification data
-				$notification_data = unserialize($row['notification_data']);
+				$notification_data = unserialize($row['notification_data'], array('allowed_classes' => false));
+
+				if (!is_array($notification_data) || empty($notification_data['topic_id']))
+				{
+					continue;
+				}
 
 				// skip if notification already has a topic title
 				if (isset($notification_data['topic_title']))
