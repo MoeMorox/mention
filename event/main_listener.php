@@ -420,7 +420,7 @@ class main_listener implements EventSubscriberInterface
 	 * @param int $forum_id
 	 * @param bool $current
 	 */
-	private function parse_message($message, $forum_id, $current = true, auth $local_auth = null)
+	private function parse_message($message, $forum_id, $current = true, ?auth $local_auth = null)
 	{
 		if ($local_auth === null)
 		{
