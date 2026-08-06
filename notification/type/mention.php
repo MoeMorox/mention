@@ -156,6 +156,22 @@ class mention extends base
 	 */
 	public function get_email_template()
 	{
+		if ($this->user_id)
+		{
+			$user = $this->user_loader->get_user($this->user_id);
+
+			if (!empty($user['user_lang']))
+			{
+				$lang_name = basename($user['user_lang']);
+				$override = $this->phpbb_root_path . 'ext/paul999/mention/language/' . $lang_name . '/email/mention_mail-overwrite.txt';
+
+				if (file_exists($override))
+				{
+					return '@paul999_mention/mention_mail-overwrite';
+				}
+			}
+		}
+
 		return '@paul999_mention/mention_mail';
 	}
 
