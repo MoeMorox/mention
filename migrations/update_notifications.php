@@ -30,7 +30,6 @@ class update_notifications extends \phpbb\db\migration\migration
 		$sql = 'SELECT notification_type_id
 			FROM ' . NOTIFICATION_TYPES_TABLE . "
 			WHERE notification_type_name = 'paul999.mention.notification.type.mention'";
-		$this->db->sql_query($sql);
 		$result = $this->db->sql_query_limit($sql, 1);
 		$notification_type_id = (int) $this->db->sql_fetchfield('notification_type_id');
 		$this->db->sql_freeresult($result);
@@ -39,7 +38,6 @@ class update_notifications extends \phpbb\db\migration\migration
 		$sql = 'SELECT notification_id, notification_data
 			FROM ' . NOTIFICATIONS_TABLE . '
 			WHERE notification_type_id = ' . (int) $notification_type_id;
-		$this->db->sql_query($sql);
 		$result = $this->db->sql_query($sql);
 		$rowset = $this->db->sql_fetchrowset($result);
 		$this->db->sql_freeresult($result);
@@ -68,15 +66,16 @@ class update_notifications extends \phpbb\db\migration\migration
 				$sql = 'SELECT topic_title
 					FROM ' . TOPICS_TABLE . '
 					WHERE topic_id = ' . (int) $notification_data['topic_id'];
-				$this->db->sql_query($sql);
 				$result = $this->db->sql_query_limit($sql, 1);
 				$notification_data['topic_title'] = $this->db->sql_fetchfield('topic_title');
 				$this->db->sql_freeresult($result);
 
 				// update the notification data
-				$sql = 'UPDATE ' . NOTIFICATIONS_TABLE . "
-					SET notification_data = '" . $this->db->sql_escape(serialize($notification_data)) . "'
-					WHERE notification_id = " . $row['notification_id'];
+				$sql = 'UPDATE ' . NOTIFICATIONS_TABLE . '
+					SET ' . $this->db->sql_build_array('UPDATE', array(
+						'notification_data' => serialize($notification_data),
+					)) . '
+					WHERE notification_id = ' . (int) $row['notification_id'];
 				$this->db->sql_query($sql);
 			}
 
