@@ -3,7 +3,7 @@
     "type": "phpbb-extension",
     "description": "Mention a user by using @USERNAME",
     "homepage": "https://www.phpbbextensions.io",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "time": "2023-03-04",
     "license": "GPL-2.0-only",
     "authors": [
@@ -12,6 +12,10 @@
             "email": "paul@phpbb.com",
             "homepage": "https://www.phpbbextensions.io",
             "role": "developer"
+        },
+        {
+            "name": "Moritz Schmidt",
+            "role": "3.0.0 updater"
         }
     ],
     "require": {
