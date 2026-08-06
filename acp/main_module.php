@@ -26,11 +26,8 @@ class main_module
 
 	/**
 	 * Main ACP module
-	 *
-	 * @param int    $id   The module ID (not used)
-	 * @param string $mode The module mode
 	 */
-	public function main($id, $mode)
+	public function main()
 	{
 		global $config, $request, $template, $user, $phpbb_log;
 

@@ -197,9 +197,8 @@ class main_listener implements EventSubscriberInterface
 
 	/**
 	 * Set the mention color on pages.
-	 * @param \phpbb\event\data $event
 	 */
-	public function page_header($event)
+	public function page_header()
 	{
 		$this->template->assign_vars([
 			'MENTION_COLOR' => $this->config['simple_mention_color'],
@@ -265,10 +264,7 @@ class main_listener implements EventSubscriberInterface
 		$this->mark_topic_read($topic_ids, $post_time);
 	}
 
-	/**
-	 * @param array $event
-	 */
-	public function posting($event)
+	public function posting()
 	{
 		if ($this->auth->acl_get('u_can_mention'))
 		{
@@ -541,7 +537,7 @@ class main_listener implements EventSubscriberInterface
 		$authCache = [];
 		if (count($data))
 		{
-			foreach ($data as $index => $row)
+			foreach ($data as $row)
 			{
 				if ($current && $this->user->data['user_id'] == $row['user_id'])
 				{

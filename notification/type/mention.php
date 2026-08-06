@@ -112,7 +112,7 @@ class mention extends base
 	{
 		$users = [];
 
-		foreach ($options['user_ids'] as $key => $user)
+		foreach ($options['user_ids'] as $user)
 		{
 			$users[$user] = $user;
 		}
