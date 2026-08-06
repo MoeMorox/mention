@@ -25,7 +25,7 @@ if (empty($lang) || !is_array($lang))
  * language items (That are directly needed by the notification system) in this file.
  */
 $lang = array_merge($lang, array(
-	'MENTION_MENTION_NOTIFICATION'	=> 'Sind mainiti kasutaja %1$s poolt<br />teemas “%2$s”',
+	'MENTION_MENTION_NOTIFICATION'	=> 'Sind mainiti kasutaja %1$s poolt<br>teemas “%2$s”',
 	'NOTIFICATION_TYPE_MENTION'     => 'Sind on mainitud',
 	'MENTION_GROUP_NAME'			=> '(Group. Will notify {CNT} users in total)', // Do not translate/change {CNT}
 ));

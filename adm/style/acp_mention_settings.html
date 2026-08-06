@@ -15,48 +15,48 @@
 	<fieldset>
 		<legend>{{ lang('MENTION_LENGTH') }}</legend>
 		<dl>
-			<dt><label for="simple_mention_minlength">{{ lang('MENTION_LENGTH') ~ lang('COLON') }}</label><br /><span>{{ lang('MENTION_LENGTH_EXPLAIN') }}</span></dt>
-			<dd><input type="number" id="simple_mention_minlength" name="simple_mention_minlength" min="1" max="9999" value="{{ SIMPLE_MENTION_MINLENGTH }}" /></dd>
+			<dt><label for="simple_mention_minlength">{{ lang('MENTION_LENGTH') ~ lang('COLON') }}</label><br><span>{{ lang('MENTION_LENGTH_EXPLAIN') }}</span></dt>
+			<dd><input type="number" id="simple_mention_minlength" name="simple_mention_minlength" min="1" max="9999" value="{{ SIMPLE_MENTION_MINLENGTH }}"></dd>
 		</dl>
 		<dl>
-			<dt><label for="simple_mention_maxresults">{{ lang('MENTION_MAX_RESULTS') ~ lang('COLON') }}</label><br /><span>{{ lang('MENTION_MAX_RESULTS_EXPLAIN') }}</span></dt>
-			<dd><input type="number" id="simple_mention_maxresults" name="simple_mention_maxresults" min="1" max="9999" value="{{ SIMPLE_MENTION_MAXRESULTS }}" /></dd>
+			<dt><label for="simple_mention_maxresults">{{ lang('MENTION_MAX_RESULTS') ~ lang('COLON') }}</label><br><span>{{ lang('MENTION_MAX_RESULTS_EXPLAIN') }}</span></dt>
+			<dd><input type="number" id="simple_mention_maxresults" name="simple_mention_maxresults" min="1" max="9999" value="{{ SIMPLE_MENTION_MAXRESULTS }}"></dd>
 		</dl>
 		<dl>
-			<dt><label for="simple_mention_color">{{ lang('MENTION_COLOR') ~ lang('COLON') }}</label><br /><span>{{ lang('MENTION_COLOR_EXPLAIN') }}</span></dt>
+			<dt><label for="simple_mention_color">{{ lang('MENTION_COLOR') ~ lang('COLON') }}</label><br><span>{{ lang('MENTION_COLOR_EXPLAIN') }}</span></dt>
 			<dd>
-				<input name="simple_mention_color" type="text" id="simple_mention_color" value="{{ SIMPLE_MENTION_COLOR }}" size="6" maxlength="6" />
+				<input name="simple_mention_color" type="text" id="simple_mention_color" value="{{ SIMPLE_MENTION_COLOR }}" size="6" maxlength="6">
 				{% if SIMPLE_MENTION_COLOR %}&nbsp;<span style="background-color: #{{ SIMPLE_MENTION_COLOR }}">&nbsp; &nbsp;</span>{% endif %}&nbsp;&nbsp;<span>
 				[ <a href="#" id="color_palette_toggle">{{ lang('COLOUR_SWATCH') }}</a> ]</span>
 				<div id="color_palette_placeholder" style="display: none;" data-color-palette="h" data-height="12" data-width="15" data-target="#simple_mention_color"></div>
 			</dd>
 		</dl>
 		<dl>
-			<dt><label for="simple_mention_style">{{ lang('MENTION_STYLE') ~ lang('COLON') }}</label><br /><span>{{ lang('MENTION_STYLE_EXPLAIN') }}</span></dt>
+			<dt><label for="simple_mention_style">{{ lang('MENTION_STYLE') ~ lang('COLON') }}</label><br><span>{{ lang('MENTION_STYLE_EXPLAIN') }}</span></dt>
 			<dd>
 				<select id="simple_mention_style" name="simple_mention_style">
-					<option value="none" {% if SIMPLE_MENTION_STYLE == 'none' %}selected="selected"{% endif %}>{{ lang('MENTION_STYLE_NONE') }}</option>
-					<option value="italic" {% if SIMPLE_MENTION_STYLE == 'italic' %}selected="selected"{% endif %}>{{ lang('MENTION_STYLE_ITALIC') }}</option>
-					<option value="bold" {% if SIMPLE_MENTION_STYLE == 'bold' %}selected="selected"{% endif %}>{{ lang('MENTION_STYLE_BOLD') }}</option>
-					<option value="italic_bold" {% if SIMPLE_MENTION_STYLE == 'italic_bold' %}selected="selected"{% endif %}>{{ lang('MENTION_STYLE_ITALIC_BOLD') }}</option>
+					<option value="none" {% if SIMPLE_MENTION_STYLE == 'none' %}selected{% endif %}>{{ lang('MENTION_STYLE_NONE') }}</option>
+					<option value="italic" {% if SIMPLE_MENTION_STYLE == 'italic' %}selected{% endif %}>{{ lang('MENTION_STYLE_ITALIC') }}</option>
+					<option value="bold" {% if SIMPLE_MENTION_STYLE == 'bold' %}selected{% endif %}>{{ lang('MENTION_STYLE_BOLD') }}</option>
+					<option value="italic_bold" {% if SIMPLE_MENTION_STYLE == 'italic_bold' %}selected{% endif %}>{{ lang('MENTION_STYLE_ITALIC_BOLD') }}</option>
 				</select>
 			</dd>
 		</dl>
 		<dl>
-			<dt><label for="simple_mention_large_groups">{{ lang('MENTION_LARGE_GROUPS') ~ lang('COLON') }}</label><br /><span>{{ lang('MENTION_LARGE_GROUPS_EXPLAIN') }}</span></dt>
-			<dd><input type="number" id="simple_mention_large_groups" name="simple_mention_large_groups" min="1" max="9999" value="{{ SIMPLE_MENTION_LARGE_GROUPS }}" /></dd>
+			<dt><label for="simple_mention_large_groups">{{ lang('MENTION_LARGE_GROUPS') ~ lang('COLON') }}</label><br><span>{{ lang('MENTION_LARGE_GROUPS_EXPLAIN') }}</span></dt>
+			<dd><input type="number" id="simple_mention_large_groups" name="simple_mention_large_groups" min="1" max="9999" value="{{ SIMPLE_MENTION_LARGE_GROUPS }}"></dd>
 		</dl>
 		<dl>
-			<dt><label for="simple_mention_link">{{ lang('MENTION_LINK') ~ lang('COLON') }}</label><br /><span>{{ lang('MENTION_LINK_EXPLAIN') }}</span></dt>
+			<dt><label for="simple_mention_link">{{ lang('MENTION_LINK') ~ lang('COLON') }}</label><br><span>{{ lang('MENTION_LINK_EXPLAIN') }}</span></dt>
 			<dd>
-				<label><input type="radio" class="radio" name="simple_mention_link" value="1" {% if SIMPLE_MENTION_LINK %}checked="checked"{% endif %} /> {{ lang('YES') }}</label>
-				<label><input type="radio" class="radio" name="simple_mention_link" value="0" {% if not SIMPLE_MENTION_LINK %}checked="checked"{% endif %} /> {{ lang('NO') }}</label>
+				<label><input type="radio" class="radio" name="simple_mention_link" value="1" {% if SIMPLE_MENTION_LINK %}checked{% endif %}> {{ lang('YES') }}</label>
+				<label><input type="radio" class="radio" name="simple_mention_link" value="0" {% if not SIMPLE_MENTION_LINK %}checked{% endif %}> {{ lang('NO') }}</label>
 			</dd>
 		</dl>
 	</fieldset>
 	<fieldset class="submit-buttons">
-		<input class="button1" type="submit" id="submit" name="submit" value="{{ lang('SUBMIT') }}" />&nbsp;
-		<input class="button2" type="reset" id="reset" name="reset" value="{{ lang('RESET') }}" />
+		<input class="button1" type="submit" id="submit" name="submit" value="{{ lang('SUBMIT') }}">&nbsp;
+		<input class="button2" type="reset" id="reset" name="reset" value="{{ lang('RESET') }}">
 		{{ S_FORM_TOKEN }}
 	</fieldset>
 </form>
