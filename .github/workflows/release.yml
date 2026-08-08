@@ -1,0 +1,31 @@
+name: Build release artifact
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Stage artifact files
+        run: |
+          mkdir -p dist/paul999/mention
+          tar -cf - \
+            --exclude=.git \
+            --exclude=.gitea \
+            --exclude=.github \
+            --exclude=dist \
+            --exclude=.gitignore \
+            . \
+          | tar -xf - -C dist/paul999/mention
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mention-${{ github.ref_name }}
+          path: dist

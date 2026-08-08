@@ -1,5 +1,5 @@
 vendor/
 build/
+dist/
 .idea
 composer.lock
-
