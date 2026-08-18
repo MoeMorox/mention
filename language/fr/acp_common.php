@@ -2,7 +2,7 @@
 /**
  *
  * Simple mentions. An extension for the phpBB Forum Software package.
- * French translation by Galixte (http://www.galixte.com)
+ * French translation by Galixte (http://www.galixte.com) & Fred Rimbert (https://caforum.fr)
  *
  * @copyright (c) 2026, Joe and Moe, https://github.com/MoeMorox/mention
  * @copyright (c) 2016, paul999, https://www.phpbbextensions.io
@@ -36,18 +36,25 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 //
 // Some characters you may want to copy&paste:
-// ’ « » “ ” …
-//
+// ’ « » “ ” … „ “
 
 $lang = array_merge($lang, array(
-	'MENTION_LENGTH'                => 'Longueur minimale du texte pour afficher les suggestions de membres à mentionner',
-	'MENTION_LENGTH_EXPLAIN'        => 'Permet de définir le nombre minimum de caractères à saisir avant d’afficher le menu déroulant suggérant les membres à mentionner.
-	Pour les forums volumineux il est recommandé d’augmenter cette valeur.',
-	'MENTION_COLOR'                 => 'Couleur de la mention',
-	'MENTION_COLOR_EXPLAIN'         => 'Permet de définir la couleur utilisée pour mentionner l’utilisateur dans le message. Les valeurs acceptées doivent être au format HEXADÉCIMAL.',
-	'MENTION_COLOR_INVALID'         => 'La couleur sélectionnée pour mentionner (%s) est incorrecte. Merci de sélectionner une couleur au format HEXADÉCIMAL, sans le caractère #.',
-	'MENTION_MAX_RESULTS'			=> 'Simple mention max results',
-	'MENTION_MAX_RESULTS_EXPLAIN'	=> 'The maximum number of users show in the dropdown. On larger boards you might want to decrease this value',
-	'MENTION_LARGE_GROUPS'			=> 'Mention large group size',
-	'MENTION_LARGE_GROUPS_EXPLAIN'	=> 'If the group has more members as the specified number, the “Can mention large groups” permission is required.'
+	'MENTION_LENGTH'                => 'Nombre minimum de caractères',
+	'MENTION_LENGTH_EXPLAIN'        => 'Nombre minimum de caractères à saisir avant d’afficher la liste déroulante des mentions. Sur les forums comptant beaucoup de membres, vous pouvez augmenter cette valeur.',
+	'MENTION_COLOR'                 => 'Couleur des mentions',
+	'MENTION_COLOR_EXPLAIN'         => 'Cette couleur est utilisée dans les messages pour identifier l’utilisateur mentionné. Seules les valeurs hexadécimales peuvent être utilisées.',
+	'MENTION_COLOR_INVALID'         => 'La couleur de mention sélectionnée (%s) est invalide. Veuillez sélectionner une couleur HEX valide, sans le caractère #.',
+	'MENTION_STYLE'                 => 'Style de police des mentions',
+	'MENTION_STYLE_EXPLAIN'         => 'Style de police appliqué aux mentions dans les messages.',
+	'MENTION_STYLE_INVALID'         => 'Le style de police de mention sélectionné (%s) est invalide.',
+	'MENTION_STYLE_NONE'            => 'Aucun',
+	'MENTION_STYLE_ITALIC'          => 'Italique',
+	'MENTION_STYLE_BOLD'            => 'Gras',
+	'MENTION_STYLE_ITALIC_BOLD'     => 'Gras et italique',
+	'MENTION_MAX_RESULTS'           => 'Nombre maximum de résultats',
+	'MENTION_MAX_RESULTS_EXPLAIN'   => 'Nombre maximum d’utilisateurs affichés dans la liste déroulante. Sur les forums comptant beaucoup de membres, vous pouvez réduire cette valeur.',
+	'MENTION_LARGE_GROUPS'          => 'Taille des groupes importants',
+	'MENTION_LARGE_GROUPS_EXPLAIN'  => 'Si le groupe compte plus de membres que le nombre indiqué, la permission « Peut mentionner les groupes importants » est requise.',
+	'MENTION_LINK'                  => 'Lien vers le profil',
+	'MENTION_LINK_EXPLAIN'          => 'Lorsque cette option est activée, les utilisateurs mentionnés sont liés à leur profil. Lorsqu’elle est désactivée, les mentions sont affichées sous forme de texte brut.',
 ));

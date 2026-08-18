@@ -1,18 +1,18 @@
 <?php
 /**
-*
-* Simple mentions extension for the phpBB Forum Software package.
-* French translation by Galixte (http://www.galixte.com)
-*
-* @copyright (c) 2026, Joe and Moe, https://github.com/MoeMorox/mention
-* @copyright (c) 2016, paul999, https://www.phpbbextensions.io
-* @license GNU General Public License, version 2 (GPL-2.0)
-*
-*/
+ *
+ * Simple mentions. An extension for the phpBB Forum Software package.
+ * French translation by Galixte (http://www.galixte.com) & Fred Rimbert (https://caforum.fr)
+ *
+ * @copyright (c) 2026, Joe and Moe, https://github.com/MoeMorox/mention
+ * @copyright (c) 2016, paul999, https://www.phpbbextensions.io
+ * @license GNU General Public License, version 2 (GPL-2.0-only)
+ *
+ */
 
 /**
-* DO NOT CHANGE
-*/
+ * DO NOT CHANGE
+ */
 if (!defined('IN_PHPBB'))
 {
 	exit;
@@ -36,11 +36,11 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 //
 // Some characters you may want to copy&paste:
-// ’ « » “ ” …
-//
+// ’ « » “ ” … „ “
 
 $lang = array_merge($lang, array(
 	'MENTION_MENTION_NOTIFICATION'	=> 'Vous avez été mentionné par « %1$s »<br>dans le message « %2$s »',
 	'NOTIFICATION_TYPE_MENTION'     => 'Quelqu’un m’a mentionné',
-	'MENTION_GROUP_NAME'			=> '(Group. Will notify {CNT} users in total)', // Do not translate/change {CNT}
+	'MENTION_GROUP_NAME'			=> '(Groupe. Notifiera {CNT} utilisateurs au total)', // Do not translate/change {CNT}
+	'MENTION_NO_MATCH_FOUND'        => 'Au moins <strong>%1$s</strong> caractères sont requis !',
 ));

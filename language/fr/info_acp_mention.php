@@ -2,7 +2,7 @@
 /**
  *
  * Simple mentions. An extension for the phpBB Forum Software package.
- * French translation by Galixte (http://www.galixte.com) & Fred Rimbert (https://caforum.fr)
+ * French translation by Fred Rimbert (https://caforum.fr)
  *
  * @copyright (c) 2026, Joe and Moe, https://github.com/MoeMorox/mention
  * @copyright (c) 2016, paul999, https://www.phpbbextensions.io
@@ -39,7 +39,8 @@ if (empty($lang) || !is_array($lang))
 // ’ « » “ ” … „ “
 
 $lang = array_merge($lang, array(
-		'ACL_U_CAN_MENTION'              => 'Peut mentionner les utilisateurs.',
-		'ACL_U_CAN_MENTION_GROUPS'       => 'Peut mentionner les groupes',
-		'ACL_U_CAN_MENTION_LARGE_GROUPS' => 'Peut mentionner les groupes importants (voir la configuration pour les paramètres des groupes importants)',
+	'ACP_MENTION'					=> 'Simple mentions',
+	'ACP_MENTION_SETTINGS'			=> 'Paramètres',
+	'ACP_MENTION_SETTINGS_EXPLAIN'	=> 'Vous pouvez configurer ici les paramètres de l’extension Simple mentions.',
+	'LOG_MENTION_SETTINGS'			=> '<strong>Paramètres de Simple mentions mis à jour</strong>',
 ));
