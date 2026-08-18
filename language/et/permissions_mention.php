@@ -3,6 +3,7 @@
  *
  * phpBB mentions. An extension for the phpBB Forum Software package.
  *
+ * @copyright (c) 2026, Joe and Moe, https://github.com/MoeMorox/mention
  * @copyright (c) 2016, paul999, https://www.phpbbextensions.io
  * @license GNU General Public License, version 2 (GPL-2.0)
  * Estonian translation by phpBBeesti.net

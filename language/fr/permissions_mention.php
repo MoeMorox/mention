@@ -4,7 +4,8 @@
 * Simple mentions extension for the phpBB Forum Software package.
 * French translation by Galixte (http://www.galixte.com)
 *
-* @copyright (c) 2017 paul999 <https://www.phpbbextensions.io>
+* @copyright (c) 2026, Joe and Moe, https://github.com/MoeMorox/mention
+* @copyright (c) 2016, paul999, https://www.phpbbextensions.io
 * @license GNU General Public License, version 2 (GPL-2.0)
 *
 */
