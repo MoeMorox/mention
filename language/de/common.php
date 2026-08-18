@@ -27,6 +27,6 @@ if (empty($lang) || !is_array($lang))
 $lang = array_merge($lang, array(
 	'MENTION_MENTION_NOTIFICATION'	=> 'Du wurdest von %1$s erwähnt<br>in “%2$s”',
 	'NOTIFICATION_TYPE_MENTION'     => 'Jemand hat dich in einem Beitrag erwähnt',
-	'MENTION_GROUP_NAME'			=> '(Gruppe. {CNT} Benutzer werden benachrichtigt)', // Do not translate/change {CNT}
+	'MENTION_GROUP_NAME'			=> '(Gruppe. {CNT} Benutzer werden benachrichtigt)',
 	'MENTION_NO_MATCH_FOUND'		=> 'Es sind mindestens <strong>%1$s</strong> Zeichen erforderlich!',
 ));
