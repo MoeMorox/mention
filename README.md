@@ -40,7 +40,7 @@ This extension requires phpBB `>= 3.3.0RC1` and PHP `~7.1` or `~8.0`.
 
 ## Translations
 
-Currently, only `en`, `de`, and `de_x_sie` are maintained.
+Currently, only `en`, `de`, `de_x_sie`, and `fr` are maintained.
 
 Other existing language directories were inherited from the original project and are not actively maintained in this fork. If you use another language, review and update the texts before using them in production.
 
